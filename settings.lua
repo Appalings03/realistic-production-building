@@ -1,3 +1,4 @@
+-- Besoin d'idée comme setting à mettre
 local order = {
     type = "string-setting",
     name = "RM-stp-order",
@@ -5,14 +6,9 @@ local order = {
     setting_type = "startup",
     default_value = "aw",
     allowed_values = {"aw", "dw"},
+    hidden = true,
 }
-
-local bool = {
-
-}
-
 
 data:extend({
     order,
-    bool,
 })
